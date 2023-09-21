@@ -5,6 +5,7 @@
 	@media (max-width: 360px) {
 		padding-left: 22px;
 		padding-right: 15px;
+		font-size: 12px;
 	}	
 	
 }
@@ -14,6 +15,9 @@
 	justify-content: flex-start;
 	align-items: center;
 	margin-bottom: 13px;
+	@media (max-width: 360px) {		
+		font-size: 12px;
+	}	
 }
 
 .featureItem img {
