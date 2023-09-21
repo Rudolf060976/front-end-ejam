@@ -27,3 +27,27 @@
 	}	
 }
 
+.normalFont {
+	color: #4D5254;
+	font-family: 'Manrope';
+	font-size: 16px;
+	line-height: 25.6px;
+	font-weight: 400;
+	@media (max-width: 360px) {
+		font-size: 12px;
+		line-height: 19.2px;
+	}	
+}
+
+.strongFont {
+	color: #4D5254;
+	font-family: 'Manrope';
+	font-size: 16px;
+	line-height: 25.6px;
+	font-weight: 700;
+	@media (max-width: 360px) {
+		font-size: 12px;
+		line-height: 19.2px;
+	}	
+}
+
