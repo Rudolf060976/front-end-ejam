@@ -4,7 +4,6 @@ import Steps, { StepType } from '../../components/steps/Steps'
 import bigProductImage from '../../assets/images/bigProductImage.png'
 import commentImage from '../../assets/images/comment.png'
 import productImagePreview from '../../assets/images/productImagePreview.png'
-import blueCheck from '../../assets/images/blueCheck.png'
 import ProductInfo, { ProductInfoType } from '../../components/productInfo/ProductInfo'
 import Features, { FeatureType } from '../../components/features/Features'
 import Save from '../../components/save/Save'
@@ -50,7 +49,7 @@ const Upsell = () => {
 				</div>
 				<div className={styles.contentContainer}>
 					<ProductInfo productInfo={productInfo} onImagePreviewClick={handlePreviewClick} />
-					<Features features={features} />
+					<Features />
 					<div className={styles.saveAndDiscountButtonWrapper}>
 						<Save savePercentage='53%' getString='6 extra Clarifision' price='$14 Each'/>
 						<button className={styles.discountButton}>YES - CLAIM MY DISCOUNT &#129122;</button>
@@ -71,23 +70,6 @@ const Upsell = () => {
 
 export default Upsell
 
-const features: FeatureType[] = [
-	{
-		id: 1,
-		iconSrc: blueCheck,
-		content: <p className={styles.normalFont}>Negative Ion Technology may <span className={styles.strongFont}>help with allergens</span></p>
-	},
-	{
-		id: 2,
-		iconSrc: blueCheck,
-		content: <p className={styles.normalFont}>Designed for <span className={styles.strongFont}>air rejuvenation</span></p>
-	},
-	{
-		id: 3,
-		iconSrc: blueCheck,
-		content: <p className={styles.normalFont}><span className={styles.strongFont}>Perfect for every room</span>in all types of places</p>
-	}
-]
 
 const stepsDataLarge: StepType[] = [
 	{
