@@ -15,8 +15,12 @@
 	justify-content: flex-start;
 	align-items: center;
 	margin-bottom: 13px;
+	font-family: 'Manrope';
+	font-size: 16px;
+	line-height: 25.6px;
 	@media (max-width: 360px) {		
 		font-size: 12px;
+		line-height: 19.2px;
 	}	
 }
 
@@ -28,30 +32,19 @@
 }
 
 .normalFont {
-	color: #4D5254;
-	font-family: 'Manrope';
-	font-size: 16px;
-	line-height: 25.6px;
+	color: #4D5254;	
 	font-weight: 400;
-	@media (max-width: 360px) {
-		font-family: 'Manrope';
-		font-size: 12px;
+	@media (max-width: 360px) {			
 		line-height: 19.2px;
-		font-weight: 400;
+		
 	}	
 }
 
 .strongFont {
 	color: #4D5254;
-	font-family: 'Manrope';
-	font-size: 16px;
-	line-height: 25.6px;
-	font-weight: 700;
-	@media (max-width: 360px) {
-		font-family: 'Manrope';
-		font-size: 12px;
+	font-weight: 700;	
+	@media (max-width: 360px) {		
 		line-height: 19.2px;
-		font-weight: 700;
 	}	
 }
 
