@@ -25,20 +25,23 @@ const Header = ({ headerItems }: HeaderProps) => {
 				{
 					isSmallScreen ?
 					<MobileHeader headerItems={headerItems} /> :
-					<ul className={styles.headersList}>
-						{headerItems.map(headerItem => {
+					<div className={styles.headersListWrapper}>
+						<ul className={styles.headersList}>
+							{headerItems.map(headerItem => {
 
-							const Logo = headerItem.logo
+								const Logo = headerItem.logo
 
-							return (
-								<div key={headerItem.content} className={styles.headerItemWrapper}>
-									<Logo />
-									<span className={styles.headerItem}>{headerItem.content}</span>
-								</div>
-							)
+								return (
+									<div key={headerItem.content} className={styles.headerItemWrapper}>
+										<Logo />
+										<span className={styles.headerItem}>{headerItem.content}</span>
+									</div>
+								)
 
-						})}
-					</ul>
+							})}
+						</ul>
+					</div>
+					
 				}
 				<ul className={styles.productHeaderWrapper}>
 					<li className={styles.productHeaderLeft}>
