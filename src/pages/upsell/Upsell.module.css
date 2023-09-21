@@ -1,0 +1,256 @@
+.pageWrapper {
+	width: 100%;	
+	@media (max-width: 360px) {
+		background-color: #FAFAFA;
+	}	
+}
+
+.pageTitleWrapper {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: -17px;
+	margin-bottom: 55px;
+	@media (max-width: 360px) {
+		margin-top: 0;		
+		margin-bottom: 20px;
+	}	
+}
+
+.pageTitle {
+	font-family: 'Manrope';
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 48px;
+	@media (max-width: 360px) {
+		margin-top: 35px;
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 44.8px;
+		text-align: center;
+	}	
+}
+
+.pageSubtitle {
+	font-family: 'Manrope';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 15px;
+	color: #4D5254;
+	@media (max-width: 360px) {		
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22.4px;	
+		text-align: center;
+		margin-top: 10px;
+	}	
+}
+
+.gridContainer {
+	width: 100%;
+	max-width: 1245px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas:
+      'pic pic title title'
+      'pic pic content content'
+			'pic pic content content'
+      'comment comment content content';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 23px 60px;
+	background-color: #FAFAFA;
+	border-radius: 10px;
+	padding: 40px;
+	margin-bottom: 60px;
+	@media (max-width: 360px) {
+		width: 100%;
+		max-width: 360px;
+		grid-template-areas:
+      'title title'			
+      'pic pic'
+			'pic pic'
+      'content content'
+			'content content';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 10px 0px;
+		padding: 0;
+		background-color: white;
+		margin-bottom: 25px;
+	}	
+}
+
+.pictureContainer {
+	grid-area: pic;	
+	@media (max-width: 360px) {		
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 10px;
+		margin-bottom: 20px;		
+	}		
+}
+
+.pictureContainer img {
+	width: 575px;
+	height: 591px;
+	@media (max-width: 360px) {
+		width: 300px;
+		height: 328px;
+	}	
+}
+
+.commentContainer {
+	grid-area: comment;	
+}
+
+.commentContainer img {
+	width: 575px;
+}
+
+.titleContainer {
+	grid-area: title;	
+	width: 550px;	
+	margin-top: -10px;
+	@media (max-width: 360px) {
+		width: 100%;
+		max-width: 360px;
+	}	
+}
+
+.titleNormal {
+	font-family: 'Manrope';
+	font-size: 32px;	
+	font-weight: 400;
+	@media (max-width: 360px) {
+		font-size: 24px;
+		padding-left: 20px;
+		padding-right: 10px;
+	}	
+}
+
+.titleBlue {
+	font-family: 'Manrope';
+	font-size: 32px;	
+	font-weight: 600;
+	color: #2C7EF8;	
+	@media (max-width: 360px) {
+		font-size: 24px;	
+	}	
+}
+
+.contentContainer {
+	grid-area: content;
+	width: 550px;
+	@media (max-width: 360px) {
+		width: 100%;
+		max-width: 360px;
+		margin-top: -10px;
+	}	
+}
+
+.normal {
+	color: #4D5254;
+	font-family: 'Manrope';
+	font-size: 16px;
+	line-height: 25.6px;
+	font-weight: 400;
+	@media (max-width: 360px) {
+		font-size: 12px;
+		line-height: 19.2px;
+	}	
+}
+
+.strong {
+	color: #4D5254;
+	font-family: 'Manrope';
+	font-size: 16px;
+	line-height: 25.6px;
+	font-weight: 700;
+	@media (max-width: 360px) {
+		font-size: 12px;
+		line-height: 19.2px;
+	}	
+}
+
+.discountButton {
+	display: block;
+	width: 100%;
+	height: 59px;
+	color: white;
+	background-color: #59AE43;
+	font-family: 'Manrope';
+	font-size: 20px;	
+	font-weight: 700;
+	border-radius: 50px;	
+	border: none;	
+	cursor: pointer;
+	margin-bottom: 12px;
+	@media (max-width: 360px) {
+		width: 100%;
+		height: 51px;
+		font-size: 14px;	
+	}	
+}
+
+.noThanks {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-family: 'Manrope';
+	font-size: 18px;	
+	font-weight: 500;
+	color: #F82C2C;
+	line-height: 24.59px;	
+	margin-bottom: 20px;
+	@media (max-width: 360px) {
+		font-family: 'Manrope';
+		font-size: 12px;
+		line-height: 16.39px;		
+	}	
+}
+
+.satisfactionContainer {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;	
+}
+
+.satisfactionContainer p {
+	width: 75%;
+	margin-left: 18px;
+	padding-right: 15px;
+	font-family: 'Manrope';
+	font-size: 16px;	
+	font-weight: 400;
+	color: #4D5254;
+	@media (max-width: 360px) {
+		font-size: 12px;
+		line-height: 16.8px;		
+	}	
+}
+
+.satisfactionContainer img {
+	width: 48px;
+}
+
+.satisfactionStrong {
+	font-weight: 700;
+	@media (max-width: 360px) {
+		font-size: 12px;
+		line-height: 16.8px;		
+	}	
+}
+
+.saveAndDiscountButtonWrapper {
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}

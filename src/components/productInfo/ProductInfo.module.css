@@ -1,0 +1,137 @@
+.productInfoContainer {
+	width: 100%;
+	display: grid;
+	grid-template-areas:
+      'view prodTitle prodTitle prodTitle'
+      'view stars stars stars'
+			'view stock stock stock'
+			'view description description description';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 5px 20px;
+		@media (max-width: 360px) {
+			box-sizing: border-box;
+			max-width: 360px;
+			grid-template-areas:
+      'view prodTitle prodTitle'
+      'view stars stars'
+			'view stock stock'
+			'description description description';
+   		grid-template-columns: 0.5fr 0.5fr 1fr;
+    	grid-template-rows: repeat(4, auto);
+    	gap: 2px 20px;
+			padding-left: 22px;
+			padding-right: 22px;
+		}	
+
+}
+
+.previewContainer {
+	grid-area: view;
+	cursor: pointer;
+}
+
+.prodTitleContainer {
+	grid-area: prodTitle;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.starsContainer {
+	grid-area: stars;
+}
+
+.starsContainer img {
+	@media (max-width: 360px) {
+		width: 68px;		
+	}	
+}
+
+.stockContainer {
+	grid-area: stock;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.descriptionContainer {
+	grid-area: description;
+}
+
+.previewContainer img {
+	width: 134px;
+	@media (max-width: 360px) {
+		width: 80px;		
+	}	
+}
+
+.prodTitleContainer h3 {
+	font-family: 'Manrope';
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 400;
+	@media (max-width: 360px) {
+		font-size: 14px;		
+	}	
+}
+
+.priceContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.prevPrice {
+	color: #969696;
+	font-family: 'Manrope';
+	font-size: 16px;
+	line-height: 21.86px;
+	font-weight: 600;
+	text-decoration: line-through;
+	@media (max-width: 360px) {
+		font-size: 10px;		
+	}	
+}
+
+.currPrice {
+	color: #2C7EF8;
+	font-family: 'Manrope';
+	font-size: 22px;
+	line-height: 30.8px;
+	font-weight: 600;
+	margin-left: 10px;
+	@media (max-width: 360px) {
+		font-size: 14px;		
+	}	
+}
+
+.stockContainer p {
+	margin-left: 13px;
+	color: #37465A;
+	font-family: 'Manrope';
+	font-size: 16px;
+	line-height: 21.86px;
+	font-weight: 300;
+	@media (max-width: 360px) {
+		font-size: 12px;
+	}	
+}
+
+.stockContainer img {
+	@media (max-width: 360px) {
+		width: 12px;	
+	}	
+}
+
+.descriptionContainer p {
+	color: #4D5254;
+	font-family: 'Manrope';
+	font-size: 16px;
+	line-height: 22.4px;
+	font-weight: 400;	
+	@media (max-width: 360px) {
+		font-size: 12px;
+		line-height: 16.8px;
+	}	
+}

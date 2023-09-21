@@ -1,0 +1,68 @@
+.paymentsContainer {
+	width: 100%;
+	height: 33px;
+	border: 1px solid #CFCFCF;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Manrope';
+	font-size: 12px;	
+	font-weight: 400;
+	line-height: 16.8px;
+	color: #4D5254;
+	margin-bottom: 20px;
+	@media (max-width: 360px) {
+		max-width: 320px;
+		height: 71px;
+		margin: 0 auto;
+		margin-bottom: 15px;
+		flex-flow: row wrap;
+		justify-content: center;
+	}	
+}
+
+.shipping {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	@media (max-width: 360px) {
+		width: 85px;
+	}	
+}
+
+.secure {
+	width: 40%;
+	height: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid #CFCFCF;
+	@media (max-width: 360px) {
+		width: 210px;
+	}	
+}
+
+.secure svg {
+	padding-bottom: 3px;
+}
+
+.secureText {
+	margin-left: 10px;
+}
+
+.payments {
+	width: 40%;
+	height: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid #CFCFCF;	
+	@media (max-width: 360px) {
+		width: 290px;
+		border-top: 1px solid #CFCFCF;
+		border-left: none;
+		padding-top: 10px;
+	}	
+}
