@@ -75,17 +75,17 @@ const features: FeatureType[] = [
 	{
 		id: 1,
 		iconSrc: blueCheck,
-		content: <p className={styles.normal}>Negative Ion Technology may <span className={styles.strong}>help with allergens</span></p>
+		content: <p className={styles.normalFont}>Negative Ion Technology may <span className={styles.strongFont}>help with allergens</span></p>
 	},
 	{
 		id: 2,
 		iconSrc: blueCheck,
-		content: <p className={styles.normal}>Designed for <span className={styles.strong}>air rejuvenation</span></p>
+		content: <p className={styles.normalFont}>Designed for <span className={styles.strongFont}>air rejuvenation</span></p>
 	},
 	{
 		id: 3,
 		iconSrc: blueCheck,
-		content: <p className={styles.normal}><span className={styles.strong}>Perfect for every room</span>in all types of places</p>
+		content: <p className={styles.normalFont}><span className={styles.strongFont}>Perfect for every room</span>in all types of places</p>
 	}
 ]
 
